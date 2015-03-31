@@ -1,5 +1,10 @@
 .navbar {
     background-color:white;
+    opacity:0.95;
+}
+
+.navbar .container {
+    border-bottom: 1px solid #808080;
 }
 
 .navbar .container h1 {
