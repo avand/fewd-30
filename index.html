@@ -43,6 +43,7 @@
             <h3>Resources</h3>
             <ul>
               <li><a href="http://www.w3.org/TR/html5/">W3C HTML5 Specification</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS Reference (via MDN)</a></li>
               <li><a href="homework/week-1.html">Solution to Homework 1, Whales</a></li>
             </ul>
 
@@ -67,6 +68,22 @@
             <p>
                 <span>Generally speaking, metadata goes in the <code>&lt;head&gt;</code> tag, and page content goes in the <code>&lt;body&gt;</code> tag.</span>
             </p>
+
+            <h3>Ways to style your HTML</h3>
+            <ul>
+                <li>
+                    'Inline styling' with the <code>style</code> attribute. In most cases, this is the wrong way to style your web page, but can be handy for testing things out.
+                    </br><strong>example:</strong> <code>&lt;footer style="text-align:center;"&gt;&lt;/footer&gt;</code>
+                </li>
+                <li>
+                    Embedding styling rules in your HTML page in a <code>&lt;style&gt;</code> tag.  This can work for small pages, but is usually not preferred.
+                    </br><strong>example:</strong> <code>&lt;style&gt;footer { text-align:center; }&lt;/style&gt;</code>
+                </li>
+                <li>
+                    Linking to a CSS file that contains your styling rules using a <code>&lt;link&gt;</code> tag.  This is usually the best thing to do as it separates your style completely from your markup.
+                    </br><strong>example:</strong> <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>
+                </li>
+            </ul>
 
             <h2 id="week-1">Week 1</h2>
 
