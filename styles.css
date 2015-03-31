@@ -19,8 +19,3 @@ h2:before {
     margin-top: -60px;
     visibility: hidden; 
 }
-
-pre.inline {
-    display:inline;
-    padding:2px;
-}
