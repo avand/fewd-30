@@ -25,36 +25,30 @@
               Sandi (<a href="mailto:sandima.job@gmail.com">sandima.job@gmail.com</a>).
             </p>
 
+<<<<<<< HEAD
             <h2 id="contents">Contents:</h2>
             <ul>
                 <li>
-                    <a href="#week-2">Week 2</a>
+                    <a href="#week-1">Week 1</a>
                 </li>
                 <li>
-                    <a href="#week-1">Week 1</a>
+                    <a href="#week-2">Week 2</a>
                 </li>
                 <li>
                     <a href="#shortcuts">Keyboard Shortcuts</a>
                 </li>
             </ul>
 
-            <h2 id="week-2">Week 2</h2>
+            <h2 id="week-1">Week 1</h2>
+=======
+            <h2>Week 2</h2>
 
-            <h3>Resources</h3>
             <ul>
               <li><a href="homework/week-1.html">Solution to Homework 1, Whales</a></li>
             </ul>
 
-            <h3>Submitting Homework</h3>
-            <ul>
-                <li>Create a folder in your GitHub repo for homework. (maybe call it "homework")</li>
-                <li>Put your homework files in the homework folder</li>
-                <li>Commit and sync your changes to GitHub</li>
-                <li>Create a text file containing a link to your published page, for example: <a href="http://avand.github.io/fewd-30/profile.html">http://avand.github.io/fewd-30/profile.html</a></li>
-                <li>Post this file to Schoology as your homework submission</li>
-            </ul>
-
-            <h2 id="week-1">Week 1</h2>
+            <h2>Week 1</h2>
+>>>>>>> 947c27a85b8ea97bc0c3640fca5c0f4480cdd7a1
 
             <h3>
                 Homework:
@@ -134,6 +128,17 @@
                 <li>Open Atom and then open the project folder you are working on.</li>
                 <li>Open up Chrome. It's where you'll see your work. You'll probably want to open the page you're working on too.</li>
                 <li>Arrange your windows in a way that will minimize fussing.  Try making Atom side by side with Chrome maybe.</li>
+            </ul>
+
+            <h2 id="week-2">Week 2</h2>
+
+            <h3>Submitting Homework</h3>
+            <ul>
+                <li>Create a folder in your GitHub repo for homework. (maybe call it "homework")</li>
+                <li>Put your homework files in the homework folder</li>
+                <li>Commit and sync your changes to GitHub</li>
+                <li>Create a text file containing a link to your published page, for example: <a href="http://avand.github.io/fewd-30/profile.html">http://avand.github.io/fewd-30/profile.html</a></li>
+                <li>Post this file to Schoology as your homework submission</li>
             </ul>
 
             <h2 id="shortcuts">Keyboard Shortcuts</h2>
