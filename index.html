@@ -134,6 +134,29 @@
                 <strong>IMPORTANT NOTE!</strong> Inline styles take precedence over styling rules.  Still, you probably shouldn't use them.
             </p>
 
+            <h3>Positioning Elements with CSS</h3>
+            <p>
+                When you use anything other that "static" (the default value for position), you'll be able to use the properties "top", "right", "bottom" and "left" to adjust your elements position, but how it is positioned depends on what value you set position to:
+            </p>
+            <ul>
+                <li>
+                    <code>position: static;</code>
+                    <p>positions based on the content; cannot be adjusted and it's the default value for position for all elements (you probably don't need to know that, but can use it to sound cool at parties)</p>
+                </li>
+                <li>
+                    <code>position: relative;</code>
+                    <p>positions relative to where it normally is</p>
+                </li>
+                <li>
+                    <code>position: absolute;</code>
+                    <p>like "fixed" but positions with respect to it's nearest relative container</p>
+                </li>
+                <li>
+                    <code>position: fixed;</code>
+                    <p>positions with respect to the browser window (useful for sticky headers and stuff)</p>
+                </li>
+            </ul>
+
             <h2 id="week-1">Week 1</h2>
 
             <h3>
