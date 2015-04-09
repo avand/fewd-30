@@ -55,7 +55,29 @@
                 <li><a href="http://necolas.github.io/normalize.css/">Normalize CSS</a></li>
             </ul>
 
-            <h3>Nested CSS selectors</h3>
+            <h3>CSS selectors</h3>
+
+            <p>CSS selectors are how you get things on the page to style them in your CSS. There are a few basic ways to do this:</p>
+
+            <ul>
+                <li>by element: <code>a {color: red;}</code></li>
+                <li>by class: <code>.danger {color: red;}</code></li>
+                <li>by id: <code>#warning-message {color: red;}</code></li>
+            </ul>
+
+            <p>When it comes to ids and classes, remember:</p>
+
+            <ul>
+                <li>An id should only appear once on the page.  Ids should be unique and elements can only have one id.</li>
+                <li>Classes may be applied to many elements on the page.</li>
+                <li>Elements <strong>can</strong> have many classes!</li>
+            </ul>
+
+            <p>Select on multiple things on a single element by chaining selectors together without a space, for example: <code>a.danger.btn {color: red;}</code></p>
+
+            <h3>Descendant CSS selectors</h3>
+
+            <p>You can select nested elements by putting a space between selectors. For example: <code>header a</code> selects all the <code>&lt;a&gt;</code> tags in the header.
 
             <p>Some rules of thumb when nesting CSS selectors:</p>
 
@@ -66,7 +88,9 @@
 
             <h3>Pseudo-selectors!</h3>
 
-            <p>Pseudo-selectors allow you to create CSS selectors that select elements based on a particular state of that element (called pseudo-classes).  A list of all the available pseudo-classes is available on <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">MDN</a>.</p>
+            <p>Pseudo-selectors allow you to create CSS selectors that select elements based on a particular state of that element (called pseudo-classes).  They are denoted by a colon.  For example: <code>a:hover</code> selects the <code>&lt;a&gt;</code> tags that are currently being hovered over by the cursor.</p>
+
+            <p>A list of all the available pseudo-classes is available on <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">MDN</a>.</p>
 
             <p>Some rules of thumb when using pseudo-selectors:</p>
 
