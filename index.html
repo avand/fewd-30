@@ -59,7 +59,59 @@
 
             <h3>Forms</h3>
 
-            <p>Forms are how we manage data we are going to send to the server.  The entire form content is wrapped in a <code>&lt;form&gt;</code> tag, and the data are stored in <code>&lt;input&gt;</code> tags to allow for user interaction.  There are many types of <code>&lt;input&gt;</code> tags, see <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input">MDN's list of input types</a>.</p>
+            <p>Forms are how we manage data we are going to send to the server. The entire form content is wrapped in a <code>&lt;form&gt;</code> tag.  Forms have attributes that describe how they should interact with the server - the most important of these are <code>method</code> (which describes the HTTP method to use) and <code>action</code> (which describes where the data should be sent).  See <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form">MDN's form reference</a> for a complete list and more details</p>
+            <p>The form's data are stored in <code>&lt;input&gt;</code> tags to allow for user interaction.  There are many types of <code>&lt;input&gt;</code> tags and related attributes, see <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input">MDN's reference on inputs</a> for a comprehensive list of input types and other related input attributes. </p>
+            <p><code>&lt;input&gt;</code> tags are labeled by <code>&lt;label&gt;</code> tags.  You can use the <code>for</code> attribute on your <code>&lt;label&gt;</code> tag to reference the labeled input element's id.</p>
+
+            <h3>Why do we need programming languages?</h3>
+
+            <ul>
+                <li><strong>branching/condtionals</strong>: if a certain state is observed do a thing</li>
+                <li><strong>loops</strong>: doing the same thing to a whole list of things</li>
+                <li><strong>input/output</strong>: consuming data and doing something with it</li>
+            </ul>
+
+            <h3>Variables</h3>
+
+            <p>In programming languages, information is stored in things called variables.</p>
+
+            <p>in Javascript variables are created using the keyword <code>var</code>.  For example: <code>var x = 1;</code></p>
+
+            <p>Variables can store different types of data, for example:</p>
+
+            <ul>
+                <li><strong>Numbers</strong>: sometimes called integers (without a decimal) and floats (with a decimal).  In Javascript we just call them all numbers</li>
+                <li><strong>Strings</strong>: some text, programming languages like Javascript are good at manipulating text</li>
+            </ul>
+
+            <h3>Operators</h3>
+
+            <p>In the above example (<code>var x = 1;</code>), we call the equals sign (<code>=</code>) the "operator".  The operator <code>=</code> assigns a value to a variable.  The above example assigns the value <code>1</code> to the variable <code>x</code>.</p>
+
+            <p>There are other operators used to manipulate values, for example: <code>+</code>, <code>-</code>, <code>*</code>, etc.</p>
+
+            <h3>Functions</h3>
+
+            <p>Functions fundamentally have three parts:</p>
+
+            <ul>
+                <li>Take in some information. We call this input information 'arguments'.  You can supply a function with as many arguments as you like.</li>
+                <li>Do something, probably using the information that has been 'passed in' as arguments.</li>
+                <li>Return something.  Functions in Javascript <strong>always</strong> return something</li>
+            </ul>
+
+            <p>For example:</p>
+
+            <pre><code>function sum(a, b) {<br/>  var result = a + b;<br/>  return result;<br/>}</code></pre>
+
+            <h3>Javascript Language Rules</h3>
+
+            <ul>
+                <li>Lines end with a semicolon (<code>;</code>)</li>
+                <li>Some words are reserved, for example <code>var</code>.</li>
+                <li>Variable names can't start with numbers, but they can contain numbers.</li>
+                <li>Variable names should be camel case for example: <code>forExample</code></li>
+            </ul>
 
             <h2 id="week-3">Week 3</h2>
 
