@@ -13,12 +13,12 @@ var newTodoItemForm = document.querySelector("#new-todo-item-form");
 var newTodoItemInput = document.querySelector("#new-todo-item-input");
 var todoList = document.querySelector("#todo-list");
 
-function createTodo(event) {
+function createTodo(formSubmitEvent) {
   var newListItem = document.createElement("li");
   newListItem.textContent = newTodoItemInput.value;
   todoList.appendChild(newListItem);
   newTodoItemForm.reset();
-  event.preventDefault();
+  formSubmitEvent.preventDefault();
 }
 
 newTodoItemForm.addEventListener("submit", createTodo);
