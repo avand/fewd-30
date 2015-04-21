@@ -28,7 +28,10 @@
             <h2 id="contents">Contents:</h2>
             <ul>
                 <li>
-                  <a href="#week-5">Week 5</a>
+                    <a href="#week-5">Week 5</a>
+                </li>
+                <li>
+                    <a href="#week-4">Week 4</a>
                 </li>
                 <li>
                     <a href="#week-3">Week 3</a>
@@ -42,11 +45,12 @@
                 <li>
                     <a href="#shortcuts">Keyboard Shortcuts</a>
                 </li>
+                <li>
+                    <a href="#github-links">GitHub Links</a>
+                </li>
             </ul>
 
             <h2 id="week-5">Week 5</h2>
-
-            <h3>Resources</h3>
 
             <ul>
               <li><a href="js-playground.html">JS Playground</a></li>
@@ -55,7 +59,123 @@
               <li><a href="homework/week-4.html">Homework solution</a></li>
             </ul>
 
+            <h3>Objects</h3>
+
+            <p>Objects are a very important data type in javascript.  Objects can be stored in variables like other data types, and they themselves can contain more values as <strong>key value pairs</strong>. Here's an example of assigning an object to a variable:</p>
+
+            <pre><code>var myPerson = {<br/>&nbsp;&nbsp;firstName: null,<br/>&nbsp;&nbsp;lastName:null<br/>};</code></pre>
+
+            <p>Object values can be accessed using a period (<code>.</code>), like so:</p>
+
+            <pre><code>console.log(myPerson.firstName);</code></pre>
+
+            <p>Objects can even contain code in the form of functions.  Here's an example of how you might add a function to the above object:</p>
+
+            <pre><code>myPerson.getFullName = function() {<br/>&nbsp;&nbsp;return this.firstName + ' ' + this.lastName;<br/>};</code></pre>
+
+            <p><code>this</code> in the above example is a very special variable in javascript. In this case it refers to the object myPerson because the function is attached to that object.</p>
+
+            <h2 id="week-4">Week 4</h2>
+
+            <h3>
+                Homework:
+                <a target="_blank" href="https://www.schoology.com/assignment/264243070/info">
+                    Calculator with Prompts & Alerts
+                </a>
+            </h3>
+
+            <h3>Resources</h3>
+
+            <ul>
+                <li><a href="http://learnlayout.com/clearfix.html">Clearfix Primer</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input">MDN on HTML Form Inputs</a></li>
+                <li><a href="https://github.com/airbnb/javascript">A pretty good guide on preferred Javascript style</a></li>
+            </ul>
+
+            <h3>Floats Revisted</h3>
+
+            <p>A 'clearfix' is a hack used to manage layouts with floats, see <a href="http://learnlayout.com/clearfix.html">this example</a>.  The modern way to do this is with the CSS property <code>overflow:auto;</code></p>
+
+            <h3>Forms</h3>
+
+            <p>Forms are how we manage data we are going to send to the server. The entire form content is wrapped in a <code>&lt;form&gt;</code> tag.  Forms have attributes that describe how they should interact with the server - the most important of these are <code>method</code> (which describes the HTTP method to use) and <code>action</code> (which describes where the data should be sent).  See <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form">MDN's form reference</a> for a complete list and more details</p>
+            <p>The form's data are stored in <code>&lt;input&gt;</code> tags to allow for user interaction.  There are many types of <code>&lt;input&gt;</code> tags and related attributes, see <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input">MDN's reference on inputs</a> for a comprehensive list of input types and other related input attributes. </p>
+            <p><code>&lt;input&gt;</code> tags are labeled by <code>&lt;label&gt;</code> tags.  You can use the <code>for</code> attribute on your <code>&lt;label&gt;</code> tag to reference the labeled input element's id.</p>
+
+            <h3>Why do we need programming languages?</h3>
+
+            <ul>
+                <li><strong>branching/condtionals</strong>: if a certain state is observed, do a thing</li>
+                <li><strong>loops</strong>: doing the same thing to a whole list of things</li>
+                <li><strong>input/output</strong>: consuming data and doing something with it</li>
+            </ul>
+
+            <h3>Variables</h3>
+
+            <p>In programming languages, information is stored in things called variables.</p>
+
+            <p>in Javascript variables are created using the keyword <code>var</code>.  For example: <code>var x = 1;</code></p>
+
+            <p>Variables can store different types of data, for example:</p>
+
+            <ul>
+                <li><strong>Numbers</strong>: sometimes called integers (without a decimal) and floats (with a decimal).  In Javascript we just call them all numbers</li>
+                <li><strong>Strings</strong>: some text, programming languages like Javascript are good at manipulating text</li>
+            </ul>
+
+            <h3>Operators</h3>
+
+            <p>In the above example (<code>var x = 1;</code>), we call the equals sign (<code>=</code>) the "operator".  The operator <code>=</code> assigns a value to a variable.  The above example assigns the value <code>1</code> to the variable <code>x</code>.</p>
+
+            <p>There are other operators used to manipulate values, for example: <code>+</code>, <code>-</code>, <code>*</code>, etc.</p>
+
+            <h3>Functions</h3>
+
+            <p>Functions fundamentally have three parts:</p>
+
+            <ul>
+                <li>Take in some information. We call this input information 'arguments'.  You can supply a function with as many arguments as you like.</li>
+                <li>Do something, probably using the information that has been 'passed in' as arguments.</li>
+                <li>Return something.  Functions in Javascript <strong>always</strong> return something. If they don't return a specific value, they return a value called <code>undefined</code>.</li>
+            </ul>
+
+            <p>For example:</p>
+
+            <pre><code>function sum(a, b) {<br/>  var result = a + b;<br/>  return result;<br/>}</code></pre>
+
+            <p>Functions are called with parentheses, for example, the following returns the number 5:</p>
+
+            <pre><code>sum(2, 3);</code></pre>
+
+            <p>Javascript and the browser provide you with a bunch of functions you can use to do things.  You can find a complete list at <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects">MDN</a>.  Some examples (try them out!):</p>
+
+            <ul>
+                <li><code>parseInt</code></li>
+                <li><code>alert</code></li>
+                <li><code>prompt</code></li>
+            </ul>
+
+            <h3>Javascript Language Rules</h3>
+
+            <ul>
+                <li>Lines end with a semicolon (<code>;</code>)</li>
+                <li>Some words are reserved, for example <code>var</code>.</li>
+                <li>Variable names can't start with numbers, but they can contain numbers.</li>
+                <li>Variable names should be camel case for example: <code>forExample</code></li>
+            </ul>
+
             <h2 id="week-3">Week 3</h2>
+
+            <h3>
+                Homework:
+                <a target="_blank" href="https://www.schoology.com/assignment/261767240/info">
+                    Acme Anvil Co. Continued
+                </a>
+            </h3>
+
+            <p>
+                Build more pages for Acme Anvil Corporation. Designs for the pages are provided in the assignment.
+            </p>
 
             <h3>Resources</h3>
 
@@ -378,7 +498,7 @@
                 <tr>
                     <td>Atom</td>
                     <td>Option + Left Arrow</td>
-                    <td>Move cursor to the <strong>end of beginning of codevious word</strong></td>
+                    <td>Move cursor to the <strong>beginning of previous word</strong></td>
                 </tr>
                 <tr>
                     <td>Atom</td>
@@ -389,6 +509,16 @@
                     <td>Atom</td>
                     <td>Command + S</td>
                     <td>Save current file</td>
+                </tr>
+                <tr>
+                    <td>Atom</td>
+                    <td>Command + D</td>
+                    <td>Multi-select</td>
+                </tr>
+                <tr>
+                    <td>Atom</td>
+                    <td>Command + Enter</td>
+                    <td>Add a new line below the current line</td>
                 </tr>
                 <tr>
                     <td>Chrome</td>
@@ -435,6 +565,106 @@
             <p>
                 For more keyboard shortcuts: <a target="_blank" href="https://docs.google.com/document/d/1hRjBaYl62jw77oq_QvWiI-emrwAGzLX4iqruPK_lOew/edit#heading=h.xlcdnayntkd6">click here</a>.
             </p>
+
+            <h2 id="github-links">GitHub Links</h2>
+
+            <table class="table">
+                <tr>
+                    <th>Student</th>
+                    <th>repo link</th>
+                    <th>gh-pages link</th>
+                </tr>
+                <tr>
+                    <td>Dave</td>
+                    <td><a href="https://github.com/bdave76/fewd-30/">repo</a></td>
+                    <td><a href="https://bdave76.github.io/fewd-30/">github pages</a></td>
+                </tr>
+                <tr>
+                    <td>Arjun</td>
+                    <td><a href="https://github.com/adesai13/fewd/">repo</a></td>
+                    <td><a href="https://adesai13.github.io/fewd/">github pages</a></td>
+                </tr>
+                <tr>
+                    <td>Yana</td>
+                    <td><a href="https://github.com/yananasakin/FEWD30/">repo</a></td>
+                    <td><a href="https://yananasakin.github.io/FEWD30/">github pages</a></td>
+                </tr>
+                <tr>
+                    <td>Lila</td>
+                    <td><a href="https://github.com/lalbizu/fewd/">repo</a></td>
+                    <td><a href="https://lalbizu.github.io/fewd/">github pages</a></td>
+                </tr>
+                <tr>
+                    <td>Celso</td>
+                    <td><a href="https://github.com/celsojrnet/fewd/">repo</a></td>
+                    <td><a href="https://celsojrnet.github.io/fewd/">github pages</a></td>
+                </tr>
+                <tr>
+                    <td>Jeanne</td>
+                    <td><a href="https://github.com/jeannes/fewd-30/">repo</a></td>
+                    <td><a href="https://jeannes.github.io/fewd-30/">github pages</a></td>
+                </tr>
+                <tr>
+                    <td>Angela</td>
+                    <td><a href="https://github.com/shanegela/FEWD/">repo</a></td>
+                    <td><a href="https://shanegela.github.io/FEWD/">github pages</a></td>
+                </tr>
+                <tr>
+                    <td>Fernanda</td>
+                    <td><a href="https://github.com/fefa77/fewd-30/">repo</a></td>
+                    <td><a href="https://fefa77.github.io/fewd-30/">github pages</a></td>
+                </tr>
+                <tr>
+                    <td>Kristin</td>
+                    <td><a href="https://github.com/kristinoh/FEWD-30/">repo</a></td>
+                    <td><a href="https://kristinoh.github.io/FEWD-30/">github pages</a></td>
+                </tr>
+                <tr>
+                    <td>Alfredo</td>
+                    <td><a href="https://github.com/adcoloniv/fewd/">repo</a></td>
+                    <td><a href="https://adcoloniv.github.io/fewd/">github pages</a></td>
+                </tr>
+                <tr>
+                    <td>Stephanie</td>
+                    <td><a href="https://github.com/SJDukes/FEWD-30/">repo</a></td>
+                    <td><a href="https://SJDukes.github.io/FEWD-30/">github pages</a></td>
+                </tr>
+                <tr>
+                    <td>Lindsey</td>
+                    <td><a href="https://github.com/LindseyMiller/FEWD/">repo</a></td>
+                    <td><a href="https://LindseyMiller.github.io/FEWD/">github pages</a></td>
+                </tr>
+                <tr>
+                    <td>Wenjia</td>
+                    <td><a href="https://github.com/arorgwyn/fewd-30/">repo</a></td>
+                    <td><a href="https://arorgwyn.github.io/fewd-30/">github pages</a></td>
+                </tr>
+                <tr>
+                    <td>Maks</td>
+                    <td><a href="https://github.com/maksimstevenson/fewd-30/">repo</a></td>
+                    <td><a href="https://maksimstevenson.github.io/fewd-30/">github pages</a></td>
+                </tr>
+                <tr>
+                    <td>Gregory</td>
+                    <td><a href="https://github.com/gregory-james/fewd-30/">repo</a></td>
+                    <td><a href="https://gregory-james.github.io/fewd-30/">github pages</a></td>
+                </tr>
+                <tr>
+                    <td>Roman</td>
+                    <td><a href="https://github.com/rodogg85/fewd/">repo</a></td>
+                    <td><a href="https://rodogg85.github.io/fewd/">github pages</a></td>
+                </tr>
+                <tr>
+                    <td>Kaitlin</td>
+                    <td><a href="https://github.com/nelawk/fewd-class/">repo</a></td>
+                    <td><a href="https://nelawk.github.io/fewd-class/">github pages</a></td>
+                </tr>
+                <tr>
+                    <td>jakub</td>
+                    <td><a href="https://github.com/ejifa/fdwd-30/">repo</a></td>
+                    <td><a href="https://ejifa.github.io/fdwd-30/">github pages</a></td>
+                </tr>
+            </table>
         <div>
     </body>
 </html>
