@@ -28,6 +28,9 @@
             <h2 id="contents">Contents:</h2>
             <ul>
                 <li>
+                    <a href="#week-5">Week 5</a>
+                </li>
+                <li>
                     <a href="#week-4">Week 4</a>
                 </li>
                 <li>
@@ -47,7 +50,32 @@
                 </li>
             </ul>
 
+            <h2 id="week-4">Week 5</h2>
+
+            <h3>Objects</h3>
+
+            <p>Objects are a very important data type in javascript.  Objects can be stored in variables like other data types, and they themselves can contain more values as <strong>key value pairs</strong>. Here's an example of assigning an object to a variable:</p>
+
+            <pre><code>var myPerson = {<br/>&nbsp;&nbsp;firstName: null,<br/>&nbsp;&nbsp;lastName:null<br/>};</code></pre>
+
+            <p>Object values can be accessed using a period (<code>.</code>), like so:</p>
+            
+            <pre><code>console.log(myPerson.firstName);</code></pre>
+
+            <p>Objects can even contain code in the form of functions.  Here's an example of how you might add a function to the above object:</p>
+
+            <pre><code>myPerson.getFullName = function() {<br/>&nbsp;&nbsp;return this.firstName + ' ' + this.lastName;<br/>};</code></pre>
+
+            <p><code>this</code> in the above example is a very special variable in javascript. In this case it refers to the object myPerson because the function is attached to that object.</p>
+
             <h2 id="week-4">Week 4</h2>
+
+            <h3>
+                Homework:
+                <a target="_blank" href="https://www.schoology.com/assignment/264243070/info">
+                    Calculator with Prompts & Alerts
+                </a>
+            </h3>
 
             <h3>Resources</h3>
 
