@@ -62,11 +62,27 @@
             
             <pre><code>console.log(myPerson.firstName);</code></pre>
 
-            <p>Objects can even contain code in the form of functions.  Here's an example of how you might add a function to the above object:</p>
+            <p>Objects can even contain code in the form of functions.  Here's an example of how you can add a function to the above object:</p>
 
             <pre><code>myPerson.getFullName = function() {<br/>&nbsp;&nbsp;return this.firstName + ' ' + this.lastName;<br/>};</code></pre>
 
             <p><code>this</code> in the above example is a very special variable in javascript. In this case it refers to the object myPerson because the function is attached to that object.</p>
+
+            <p>A browser tab always includes a few important objects that you'll need to know about:</p>
+
+            <ul>
+                <li><code>window</code>: this object represents the entire browser tab.  It is the parent object of things we've already seen like <code>alert</code> and <code>prompt</code></li>
+                <li>
+                    <code>document</code>: this object represents your html document.  You'll use it to get elements from the page.  It has some important functions:
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector">querySelector</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement">createElement</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <code>element</code>: these objects (there's one for every element on your page) represent individual html elements.  The above document functions (<code>querySelector</code> and <code>createElement</code>) return elements.
+                </li>
+            </ul>
 
             <h2 id="week-4">Week 4</h2>
 
