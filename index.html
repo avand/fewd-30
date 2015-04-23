@@ -109,6 +109,14 @@
 
             <pre><code>// get the body element<br>var body = document.querySelector('body');<br><br>// create an anchor element<br>var anchor = document.createElement('a');<br><br>// set the href and text of the anchor element<br>anchor.setAttribute('href', 'http://avandamiri.com/fewd-30/');<br>anchor.textContent = 'FEWD-30';<br><br>// add the anchor element to the body<br>body.appendChild(anchor);</code></pre>
 
+            <h3>Event Handling</h3>
+
+            <p>Elements in a web page emit all kinds of "events", for example when a button is clicked it "fires" a "click" event.  We can use these events to do things with special javascript functions called event handlers.</p>
+
+            <p>Event handlers, which are just javascript functions to be called on some event, can be connected to events using a function on element objects called <code>addEventListener</code>. For example, you can create an event handler for button clicks that alerts a message like so:</p>
+
+            <pre><code>// get the button element<br>var button = document.querySelector('button');<br><br>// create an event handler<br>function buttonClicked() {<br>&nbsp;&nbsp;alert('Hello World!');<br>}<br><br>// add your event listener<br>button.addEventListener('click', buttonClicked);</code></pre>
+
             <h2 id="week-4">Week 4</h2>
 
             <h3>
