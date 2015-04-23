@@ -52,6 +52,8 @@
 
             <h2 id="week-5">Week 5</h2>
 
+            <h3>Resources</h3>
+
             <ul>
               <li><a href="js-playground.html">JS Playground</a></li>
               <li><a href="objects.html">Objects</a></li>
@@ -88,9 +90,18 @@
                     </ul>
                 </li>
                 <li>
-                    <code>element</code>: these objects (there's one for every element on your page) represent individual html elements.  The above document functions (<code>querySelector</code> and <code>createElement</code>) return elements.
+                    <code>element</code>: these objects (there's one for every element on your page) represent individual html elements.  The above document functions (<code>querySelector</code> and <code>createElement</code>) return elements. Elements also include some properties and functions that you'll find useful:
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent">textContent</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild">appendChild</a></li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/setAttribute">setAttribute</a></li>
+                    </ul>
                 </li>
             </ul>
+
+            <p>Here's an example of how you could use the functions listed above to add a link to a page:</p>
+
+            <pre><code>// get the body element<br>var body = document.querySelector('body');<br><br>// create an anchor element<br>var anchor = document.createElement('a');<br><br>// set the href and text of the anchor element<br>anchor.setAttribute('href', 'http://avandamiri.com/fewd-30/');<br>anchor.textContent = 'FEWD-30';<br><br>// add the anchor element to the body<br>body.appendChild(anchor);</code></pre>
 
             <h2 id="week-4">Week 4</h2>
 
