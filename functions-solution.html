@@ -62,39 +62,41 @@
 // Define your functions here.
 
 function returnANumber() {
+  var input = prompt("Give me a number:")
+  var result = parseInt(input);
+  return result;
 
+  // Or...
+  // return parseInt(prompt("Give me a number:"));
 }
 
-function addTwoNumbers() {
+function addTwoNumbers(n, m) {
+  n = parseInt(n);
+  m = parseInt(m);
+  return n + m;
 
+  // Or...
+  // return parseInt(n) + parseInt(m);
 }
 
-function createImage() {
-
+function createImage(source, width, height) {
+  var picture = document.createElement("img");
+  picture.setAttribute("src", source);
+  picture.setAttribute("width", width);
+  picture.setAttribute("height", height);
+  return picture;
 }
 
 // DO NOT CHANGE ANYTHING BELOW THIS LINE!
 
 var num = returnANumber();
-if (typeof num == 'number') {
-  console.log('Yay! returnANumber returns a number');
-} else {
-  console.error('returnANumber does not return a number')
-}
+if (typeof num != 'number') { console.error('returnANumber does not return a number') }
 
 var sum = addTwoNumbers(5, 6);
-if (sum == 11 || sum == 11.0) {
-  console.log('Yay! addTwoNumbers does addition');
-} else {
-  console.error('addTwoNumbers does not return the sum')
-}
+if (sum != 11 || sum != 11.0) { console.error('addTwoNumbers does not return the sum') }
 
-var sum2 = addTwoNumbers("7", "8");
-if (sum == 15 || sum == 15.0) {
-  console.log('Yay! addTwoNumbers does addition with string');
-} else {
-  console.error('addTwoNumbers does not parse string values')
-}
+var sum2 = addTwoNumbers("5", "6");
+if (sum != 11 || sum != 11.0) { console.error('addTwoNumbers does not parse string values') }
 
 var img = createImage("http://cloud.avandamiri.com/image/3z1n220j0G17/sausage.jpg", 450, 300);
 if (img == undefined) {
@@ -102,34 +104,24 @@ if (img == undefined) {
 } else if (img.nodeName != "IMG") {
   console.error('createImage does not return an image')
 } else {
-  if (img.getAttribute("src") == "http://cloud.avandamiri.com/image/3z1n220j0G17/sausage.jpg") {
-    console.log('Yay! createImage sets the source')
-  } else {
+  if (img.getAttribute("src") != "http://cloud.avandamiri.com/image/3z1n220j0G17/sausage.jpg") {
     console.error('createImage does not set the right src')
   }
 
-  if (img.getAttribute("width") == "450") {
-    console.log('Yay! createImage sets the width')
-  } else {
+  if (img.getAttribute("width") != "450") {
     console.error('createImage does not set the right width')
   }
 
-  if (img.getAttribute("height") == "300") {
-    console.log('Yay! createImage sets the height')
-  } else {
+  if (img.getAttribute("height") != "300") {
     console.error('createImage does not set the right height')
   }
 
   var img2 = createImage("http://cloud.avandamiri.com/image/3z1n220j0G17/sausage.jpg", 45, 30);
-  if (img2.getAttribute("width") == "45") {
-    console.log('Yay! createImage sets the width dynamically')
-  } else {
+  if (img2.getAttribute("width") != "45") {
     console.error('createImage does not set the width dynamically')
   }
 
-  if (img2.getAttribute("height") == "30") {
-    console.log('Yay! createImage sets the height dynamically')
-  } else {
+  if (img2.getAttribute("height") != "30") {
     console.error('createImage does not set the height dynamically')
   }
 }

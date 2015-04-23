@@ -55,8 +55,11 @@
             <h3>Resources</h3>
 
             <ul>
-              <li><a href="dom-manip.html">Exercise 1: DOM Manipulation</a></li>
-              <li><a href="functions.html">Exercise 2: FUN-ctions!</a></li>
+              <li><a href="events-1.html">Events in-class</a></li>
+              <li><a href="dom-manip.html">Exercise 1: DOM Manipulation</a>
+                (<a href="dom-manip-solution.html">solution</a>)</li>
+              <li><a href="functions.html">Exercise 2: FUN-ctions!</a>
+                (<a href="functions-solution.html">solution</a>)</li>
               <li><a href="js-playground.html">JS Playground</a></li>
               <li><a href="objects.html">Objects</a></li>
               <li><a href="books/js-reference.pdf">JS Reference</a></li>
@@ -114,7 +117,7 @@
             <p>Elements in a web page emit all kinds of "events", for example when a button is clicked it "fires" a "click" event.  We can use these events to do things with special javascript functions called event handlers.</p>
 
             <p>Event handlers, which are just javascript functions to be called on some event, can be connected to events using a function on element objects called <code>addEventListener</code>.</p>
-            
+
             <p>For example, you can create an event handler for button clicks that alerts a message like so:</p>
 
             <pre><code>// get the button element<br>var button = document.querySelector('button');<br><br>// create an event handler<br>function buttonClicked() {<br>&nbsp;&nbsp;alert('Hello World!');<br>}<br><br>// add your event listener<br>button.addEventListener('click', buttonClicked);</code></pre>
