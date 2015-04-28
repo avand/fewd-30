@@ -67,7 +67,7 @@
 
             <p>When you attach an event handler to an event, it will be called with a special 'event' object as it's first argument (commonly named <code>e</code>).</p>
 
-            <p>This object can be handy, for example, when attaching click events to anchor tags.  In this case, you may not want to use the default behavior of an anchor tag, which is to follow the path in the anchor's <code>href</code> attribute, and instead do something else.  To achieve this, you can use a function available on this event object like so:</p>
+            <p>This object can be handy, for example, when attaching click events to anchor tags.  In this case, you may not want to bypass the default behavior of an anchor tag (which is to follow the path in the anchor's <code>href</code> attribute) and instead do something else.  To achieve this, you can use a function available on this event object called <code>preventDefault</code> like so:</p>
 
             <pre><code>// get the anchor element<br/>var a = document.querySelector('a');<br/>a.addEventListener('click', function(e) {<br/>&nbsp;&nbsp;// prevent the link's default action<br/>&nbsp;&nbsp;e.preventDefault();<br/><br/>&nbsp;&nbsp;// now do something else<br/>&nbsp;&nbsp;alert('do something else!');<br/>});</code></pre>
 
@@ -77,7 +77,7 @@
 
             <p>Objects are how we represent things in javascript.  It turns out that everything in javascript is an object. For example, a string is an object with a property called <code>length</code> that contains the length of the string as an integer.  It's accessible like any other object property: <code>myString.length</code></p>
 
-            <p>Here's some important JS objects that we've already worked with, peruse their many properties and methods at your leisure:</p>
+            <p>Here are some important JS objects that we've already worked with, peruse their many properties and methods at your leisure:</p>
 
             <ul>
                 <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></li>
