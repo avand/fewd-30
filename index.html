@@ -28,6 +28,9 @@
             <h2 id="contents">Contents:</h2>
             <ul>
                 <li>
+                    <a href="#week-6">Week 6</a>
+                </li>
+                <li>
                     <a href="#week-5">Week 5</a>
                 </li>
                 <li>
@@ -49,6 +52,24 @@
                     <a href="#github-links">GitHub Links</a>
                 </li>
             </ul>
+
+            <h2 id="week-6">Week 6</h2>
+
+            <h3>Resources</h3>
+
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event">the event object according to MDN</a></li>
+            </ul>
+
+            <h3>Event Handling (continued...)</h3>
+
+            <p>When you attach an event handler to an event, it will be called with a special 'event' object as it's first argument (commonly named <code>e</code>).</p>
+
+            <p>This object can be handy, for example, when attaching click events to anchor tags.  In this case, you may not want to use the default behavior of an anchor tag, which is to follow the path in the anchor's <code>href</code> attribute, and instead do something else.  To achieve this, you can use a function available on this event object like so:</p>
+
+            <pre><code>// get the anchor element<br/>var a = document.querySelector('a');<br/>a.addEventListener('click', function(e) {<br/>&nbsp;&nbsp;// prevent the link's default action<br/>&nbsp;&nbsp;e.preventDefault();<br/><br/>&nbsp;&nbsp;// now do something else<br/>&nbsp;&nbsp;alert('do something else!');<br/>});</code></pre>
+
+            <p>The event object has lots of other properties you may find interesting or useful, you can find a complete list at <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event">MDN</a></p>
 
             <h2 id="week-5">Week 5</h2>
 
