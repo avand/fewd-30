@@ -122,7 +122,9 @@
 
             <h3>For Loops</h3>
 
-            <p>In javascript, when we want to execute some code some number of times, we use a <code>for</code> loop.  <code>for</code> loops are particularly helpful for doing something with each item in an array.  For example, the following code will add a list item to a list for each item in the array <code>instructors</code></p>
+            <p>In javascript, when we want to execute some code some number of times, we use a <code>for</code> loop.  <code>for</code> loops are particularly helpful for doing something with each item in an array.</p>
+            
+            <p>For example, the following code will add a list item to a list for each item in the array <code>instructors</code>:</p>
 
             <pre><code>var instructors = ['Avand', 'Rob', 'Sandi'];<br/>var list = document.querySelector('ul');<br/>var item;<br/><br/>for (var i = 0; i < instructors.length; i++) {<br/>&nbsp;&nbsp;item = document.createElement('li');<br/>&nbsp;&nbsp;item.textContent = instructors[i];<br/>&nbsp;&nbsp;list.appendChild(item);<br/>}</code></pre>
 
