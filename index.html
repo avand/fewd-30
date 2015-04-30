@@ -58,10 +58,16 @@
             <h3>Resources</h3>
 
             <ul>
-              <li>Day 2 In-Class Exercises (<a href="http://cloud.avandamiri.com/3l1Q1M091z0n">Download ZIP</a>)
+              <li>Day 2 In-Class Exercises (<a href="http://cloud.avandamiri.com/2R3W2Y0c3E42">Download ZIP</a>)
                 <ul>
-                  <li><a href="arrays.html">Arrays</a></li>
-                  <li><a href="for-loops.html">For Loops</a></li>
+                  <li>
+                    <a href="arrays.html">Arrays</a>
+                    (<a href="arrays-solution.html">Solution</a>)
+                  </li>
+                  <li>
+                    <a href="for-loops.html">For Loops</a>
+                    (this is the starting point for the homework 6)
+                  </li>
                 </ul>
               </li>
               <li><a href="todo-pseudo-code.html">Pseudo Code of the Todo List</a></li>
@@ -123,7 +129,7 @@
             <h3>For Loops</h3>
 
             <p>In javascript, when we want to execute some code some number of times, we use a <code>for</code> loop.  <code>for</code> loops are particularly helpful for doing something with each item in an array.</p>
-            
+
             <p>For example, the following code will add a list item to a list for each item in the array <code>instructors</code>:</p>
 
             <pre><code>var instructors = ['Avand', 'Rob', 'Sandi'];<br/>var list = document.querySelector('ul');<br/>var item;<br/><br/>for (var i = 0; i < instructors.length; i++) {<br/>&nbsp;&nbsp;item = document.createElement('li');<br/>&nbsp;&nbsp;item.textContent = instructors[i];<br/>&nbsp;&nbsp;list.appendChild(item);<br/>}</code></pre>
