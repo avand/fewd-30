@@ -1,11 +1,27 @@
 <ul>
+  <!-- Movies will go here, see below. -->
 </ul>
 
 <script>
 var favoriteMovies = [
-  { name: 'Cool Runnings', year: 1993, url: 'http://www.imdb.com/title/tt0106611/' },
-  { name: 'Terminator 2', year: 1991, url: 'http://www.imdb.com/title/tt0103064/' },
-  { name: 'Interstellar', year: 2014, url: 'http://www.imdb.com/title/tt0816692/' }
+  {
+    name: 'Cool Runnings',
+    year: 1993,
+    url: 'http://www.imdb.com/title/tt0106611/',
+    ratings: [5, 5, 5, 5, 5, 5, 5, 5]
+  },
+  {
+    name: 'Terminator 2',
+    year: 1991,
+    url: 'http://www.imdb.com/title/tt0103064/',
+    ratings: [5, 4, 3, 5, 4, 5, 4, 5, 5, 5, 3]
+  },
+  {
+    name: 'Interstellar',
+    year: 2014,
+    url: 'http://www.imdb.com/title/tt0816692/',
+    ratings: [5, 3, 5, 5, 1, 2, 4, 5, 5, 2]
+   }
 ]
 
 var list = document.querySelector("ul");
@@ -17,8 +33,16 @@ for (var i = 0; i < favoriteMovies.length; i++) {
   link.setAttribute("href", movie.url)
   link.textContent = movie.name;
 
+  var totalRating = 0;
+
+  for (var j = 0; j < movie.ratings.length; j++) {
+    totalRating += movie.ratings[j];
+  }
+
+  var avgRating = Math.round((totalRating / movie.ratings.length) * 10) / 10
+
   var span = document.createElement("span");
-  span.textContent = " (" + movie.year + ")";
+  span.textContent = "(" + movie.year + ", " + avgRating + " stars, " + movie.ratings.length + " ratings)";
 
   var movieItem = document.createElement("li");
   movieItem.appendChild(link);
@@ -27,3 +51,7 @@ for (var i = 0; i < favoriteMovies.length; i++) {
   list.appendChild(movieItem);
 }
 </script>
+
+<style>
+span { margin-left: .25em; }
+</style>
