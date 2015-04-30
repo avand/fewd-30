@@ -66,7 +66,7 @@
               </li>
               <li><a href="todo-pseudo-code.html">Pseudo Code of the Todo List</a></li>
               <li><a href="js-recipes.html">Common JS recipes</a></li>
-              <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event">the event object according to MDN</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Events">the event object according to MDN</a></li>
             </ul>
 
             <h3>Event Handling (continued...)</h3>
@@ -77,7 +77,7 @@
 
             <pre><code>// get the anchor element<br/>var a = document.querySelector('a');<br/>a.addEventListener('click', function(e) {<br/>&nbsp;&nbsp;// prevent the link's default action<br/>&nbsp;&nbsp;e.preventDefault();<br/><br/>&nbsp;&nbsp;// now do something else<br/>&nbsp;&nbsp;alert('do something else!');<br/>});</code></pre>
 
-            <p>The event object has lots of other properties you may find interesting or useful, you can find a complete list at <a href="https://developer.mozilla.org/en-US/docs/Web/API/Event">MDN</a></p>
+            <p>The event object has lots of other properties you may find interesting or useful, you can find a complete list at <a href="https://developer.mozilla.org/en-US/docs/Web/Events">MDN</a></p>
 
             <h3>Objects Redux</h3>
 
@@ -95,7 +95,30 @@
                 <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event">event</a></li>
             </ul>
 
-            <p>You won't ever need to know all of the methods and properties on these objects, but it's important to know where to find them when you begin to wonder "How do I do...?"  As you use these objects, you'll learn the super useful ones really quickly.  We're going to learn about some other important javascript objects shortly...</p>
+            <p>You won't ever need to know all of the methods and properties on these objects, but it's important to know where to find them when you begin to wonder "How do I do...?"  As you use these objects, you'll learn the super useful ones really quickly.  We're going to learn about another important javascript object next...</p>
+
+            <h3>Arrays</h3>
+
+            <p>In javascript, when we want to store a list of things, we use an object called <code>Array</code>.  Arrays can be created in javascript using square braces (<code>[</code>) like so: <code>['Avand', 'Rob', 'Sandi']</code></p>
+
+            <p>Like the other javascript objects we've looked at so far, Arrays have properties and methods that you'll probably find useful:</p>
+
+            <ul>
+                <li>
+                    properties:
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length">length</a>: a count of the number of items in the array</li>
+                    </ul>
+                </li>
+                <li>
+                    methods:
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push">push</a>: adds an item to the array</li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop">pop</a>: removes an item from the array</li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort">sort</a>: sorts the items in the array</li>
+                    </ul>
+                </li>
+            </ul>
 
             <h2 id="week-5">Week 5</h2>
 
