@@ -69,6 +69,21 @@
               </li>
             </ul>
 
+            <h3>XMLHttpRequest</h3>
+
+            <pre><code>function get(url, success) {
+  var xhr = new XMLHttpRequest();
+
+  xhr.addEventListener("readystatechange", function() {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+      success(JSON.parse(xhr.response));
+    }
+  });
+
+  xhr.open("GET", url);
+  xhr.send();
+}</code></pre>
+
             <h3>Conditionals</h3>
 
             <p>Conditionals are how we branch our code based on some condition in programming languages.</p>
