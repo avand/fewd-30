@@ -1,5 +1,7 @@
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.2.2/octicons.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 
 <style>
     body { margin: 0; }
@@ -29,12 +31,11 @@
 
 <a id="locate" class="octicon octicon-location" href="javascript:void(0);"></a>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-
 <script>
-    var map = L.map('map');
-    map.setView([33.943, -103.798], 3);
+    var map = L.map('map',{
+        center: [33.943, -103.798], 
+        zoom: 3
+    });
 
     // this is rob's - get yr own!
     var accessToken = 'pk.eyJ1Ijoicmdhc3RvbiIsImEiOiJJYTdoRWNJIn0.MN6DrT07IEKXadCU8xpUMg';
