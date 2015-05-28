@@ -13,6 +13,18 @@ var newTodoItemForm = document.querySelector("#new-todo-item-form");
 var newTodoItemInput = document.querySelector("#new-todo-item-input");
 var todoList = document.querySelector("#todo-list");
 
+localStorage.setItem("key", "value")
+localStorage.setItem("key", { make: "Corvette", model: "Z06" })
+localStorage.getItem("key") => {...}
+
+function saveObject(key, object) {
+  localStorage.setItem(key, JSON.stringify(object));
+}
+
+function loadObject(key) {
+  return JSON.parse(localStorage.getItem(key));
+}
+
 function saveTodo(text) {
   var currentTodos = JSON.parse(localStorage.getItem("todos"));
 

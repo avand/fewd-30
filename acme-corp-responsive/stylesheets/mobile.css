@@ -7,7 +7,9 @@ header {
 
 header nav {
   position: static;
-  display: none;
+  transition: all 500ms;
+  transform: scaleY(0);
+  height: 0;
 }
 
 header nav li {
@@ -15,7 +17,8 @@ header nav li {
 }
 
 header nav.expanded {
-  display: block;
+  height: 120px;
+  transform: scaleY(1);
 }
 
 main {
